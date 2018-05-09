@@ -10,32 +10,10 @@
 	<body>
 		<img id="molloy-logo" src="img/logo.jpg" alt="Molloy Eats Logo">
 		<div id = "showcase">
-		<script>
-			var i=0;
-			var images=[];
-			var time=5000;
 
-			images[0]='img/slideshow_pic1.jpg';
-			images[1]='img/slideshow_pic2.jpg';
-			images[2]='img/slideshow_pic3.jpg';
-			images[3]='img/slideshow_pic4.jpeg';
-			images[4]='img/slideshow_pic5.jpg';
-
-			function changeImg(){
-
-				document.slide.src=images[i];
-				if(i<images.length-1)
-				{
-					i++;
-				}	else	{
-					i=0;
-				}
-				setTimeout("changeImg()",time);
-			}
-		window.onload=changeImg;
-
-	</script>
-<img name="slide" width="400" hheight="200>"﻿>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery. min.js"></script>
+<div class="table-container">
+	<img name="slide" width="400" hheight="200>"﻿>
 </div>
 	<h1>Main Menu</h1>
 		<!--
@@ -49,19 +27,9 @@
 			</ul>
 		</nav>
 		-->
-		<div id="mySidenav" class="sidenav">
-			<!-- remove javascript from html -->
-  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- 			<a href="armenu.html#breakfast">Breakfast</a></li>
-  			<a href="armenu.html#burgers">Burgers</a></li>
-  			<a href="armenu.html#specials">Specials</a></li>
- 			<a href="armenu.html#sandwich">Sandwiches</a></li>
- 			<a href="armenu.html#onthego">On-The-Go</a></li>
-		</div>
 
 		<!-- Use any element to open the sidenav -->
-		<span id="nav_button" onclick="openNav()">Menu</span>
-
+		
 		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 		<div id="main">
 		<div class="section" id="breakfast">	
